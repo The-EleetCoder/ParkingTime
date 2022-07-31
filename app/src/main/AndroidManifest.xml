@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.parkingtime">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ParkingTime">
+        <activity
+            android:name=".User_Settings"
+            android:exported="false" />
+        <activity
+            android:name=".User_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Inst_Settings"
+            android:exported="true" />
+        <activity
+            android:name=".Inst_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".User_Dashboard"
+            android:exported="true"
+            android:theme="@style/AppTheme.ActionBar.Transparent"/>
+        <activity
+            android:name=".User_Login"
+            android:exported="true" />
+        <activity
+            android:name=".User_Reg"
+            android:exported="true" />
+        <activity
+            android:name=".Inst_Dashboard"
+            android:exported="true"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".Inst_Login"
+            android:exported="true" />
+        <activity
+            android:name=".Inst_Reg"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

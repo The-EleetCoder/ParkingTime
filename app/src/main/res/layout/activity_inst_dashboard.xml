@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/connect_2"
+    android:backgroundTint="#F4EFEF"
+    android:fitsSystemWindows="true"
+    tools:context=".Inst_Dashboard">
+    <!--    tools:openDrawer="start">-->
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/inst_menu" />
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/connect_2">
+
+
+        <include
+            android:id="@+id/toolbar1"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_menu" />
+
+
+        <TextView
+            android:id="@+id/inst_slots_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredericka_the_great"
+            android:textColor="@color/teal_200"
+            android:textSize="100sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.108" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/stardos_stencil_bold"
+            android:text="NO. OF SLOTS OPEN"
+            android:textColor="@color/teal_200"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inst_slots_left"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <TextView
+            android:id="@+id/inst_slots_booked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredericka_the_great"
+            android:textColor="@color/purple_200"
+            android:textSize="100sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.094" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/stardos_stencil_bold"
+            android:text="NO. OF SLOTS BOOKED"
+            android:textColor="@color/purple_200"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inst_slots_booked"
+            app:layout_constraintVertical_bias="0.061" />
+
+        <Button
+            android:id="@+id/add_booking"
+            android:layout_width="278dp"
+            android:layout_height="58dp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="#ECE8E8"
+            android:text="Add Booking"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintVertical_bias="0.146" />
+
+        <Button
+            android:id="@+id/cancel_booking"
+            android:layout_width="279dp"
+            android:layout_height="52dp"
+            android:background="@drawable/btn_bg"
+            android:text="REMOVE BOOKING"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/add_booking"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/add_booking"
+            app:layout_constraintTop_toBottomOf="@+id/add_booking"
+            app:layout_constraintVertical_bias="0.425" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    </ScrollView>-->
+
+</androidx.drawerlayout.widget.DrawerLayout>

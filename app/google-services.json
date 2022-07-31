@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "424715393577",
+    "firebase_url": "https://parkingtime-e42bb-default-rtdb.firebaseio.com",
+    "project_id": "parkingtime-e42bb",
+    "storage_bucket": "parkingtime-e42bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424715393577:android:9add0656386bf876365a38",
+        "android_client_info": {
+          "package_name": "com.project.parkingtime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424715393577-hrg0tcnj8ugcgp1a6ggk2ao0428m23s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkdjFVtec3MzhyWHqQQqRU7asv7y16dGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424715393577-hrg0tcnj8ugcgp1a6ggk2ao0428m23s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

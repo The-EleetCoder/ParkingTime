@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark"
+    tools:context=".User_Settings">
+
+    <TextView
+        android:id="@+id/update_user_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/shojumaru"
+        android:text="SETTINGS"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/upd_user_username"
+        android:layout_width="232dp"
+        android:layout_height="39dp"
+        android:background="@drawable/input_bg"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
+
+
+    <EditText
+        android:id="@+id/upd_user_pass"
+        android:layout_width="232dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_bg"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_user_username" />
+
+    <Button
+        android:id="@+id/update_user_Btn"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/teal_200"
+        android:text="Update Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <TextView
+        android:id="@+id/text_user_username"
+        android:layout_width="124dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/baloo"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/upd_user_username"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
+
+
+    <TextView
+        android:id="@+id/text_user_password"
+        android:layout_width="124dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/baloo"
+        android:text="Password:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/upd_user_pass"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_user_username"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <ImageView
+        android:id="@+id/user_settings_logo"
+        android:layout_width="166dp"
+        android:layout_height="185dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
